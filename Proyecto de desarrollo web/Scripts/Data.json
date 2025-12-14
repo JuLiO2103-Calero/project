@@ -1,0 +1,181 @@
+[
+    {
+        "DatosPersonale": {
+            "id": 1,
+            "Nombre": "Emilio",
+            "Apellido": "Madriz",
+            "Edad": 30
+        },
+        "DatosConctacto": {
+            "Correo": "",
+            "Telefono": "75478947",
+            "direccion": "Leon, Nicaragua"
+        },
+        "DatosUsuario": {
+            "Usuario": "x_emilio",
+            "Contraseña": "1234"
+        },
+        "Citas": [
+            {
+                "fecha": "2025-09-10",
+                "servicio": "Limpieza dental",
+                "profesional": "Dra. Pérez"
+            },
+            {
+                "fecha": "2025-10-15",
+                "servicio": "Revisión general",
+                "profesional": "Dr. Gómez"
+            }
+        ]
+    },
+    {
+        "DatosPersonale": {
+            "id": 2,
+            "Nombre": "Odalys",
+            "Apellido": "",
+            "Edad": 28
+        },
+        "DatosConctacto": {
+            "Correo": "",
+            "Telefono": "81654659",
+            "direccion": "El Crucero, Nicaragua"
+        },
+        "DatosUsuario": {
+            "Usuario": "x_odalys",
+            "Contraseña": "1234"
+        },
+        "Citas": [
+            {
+                "fecha": "2025-08-22",
+                "servicio": "Ortodoncia - consulta",
+                "profesional": "Dra. López"
+            }
+        ]
+    },
+    {
+        "DatosPersonale": {
+            "id": 3,
+            "Nombre": "Ludy Antonio",
+            "Apellido": "Navarro Gonzale",
+            "Edad": 40
+        },
+        "DatosConctacto": {
+            "Correo": "",
+            "Telefono": "58397661",
+            "direccion": "Masaya, Nicaragua"
+        },
+        "DatosUsuario": {
+            "Usuario": "x_ludy",
+            "Contraseña": "1234"
+        },
+        "Citas": [
+            {
+                "fecha": "2025-07-05",
+                "servicio": "Endodoncia",
+                "profesional": "Dr. Ramírez"
+            },
+            {
+                "fecha": "2025-09-01",
+                "servicio": "Blanqueamiento",
+                "profesional": "Dra. Suárez"
+            }
+        ]
+    },
+    {
+        "DatosPersonale": {
+            "id": 4,
+            "Nombre": "Fernando Gabriel",
+            "Apellido": "Perez Sanchez",
+            "Edad": 35
+        },
+        "DatosConctacto": {
+            "Correo": "",
+            "Telefono": "81994613",
+            "direccion": "Managua, Nicaragua"
+        },
+        "DatosUsuario": {
+            "Usuario": "x_fernando",
+            "Contraseña": "1234"
+        },
+        "Citas": [
+            {
+                "fecha": "2025-06-12",
+                "servicio": "Implante dental",
+                "profesional": "Dr. Ortega"
+            }
+        ]
+    },
+    {
+        "DatosPersonale": {
+            "id": 5,
+            "Nombre": "Julio Adrian",
+            "Apellido": "Catillo Martinez",
+            "Edad": 19
+        },
+        "DatosConctacto": {
+            "Correo": "",
+            "Telefono": "81855631",
+            "direccion": "Managua, Nicaragua"
+        },
+        "DatosUsuario": {
+            "Usuario": "x_julio",
+            "Contraseña": "1234"
+        },
+        "Citas": [
+            {
+                "fecha": "2025-03-20",
+                "servicio": "Extracción",
+                "profesional": "Dra. Herrera"
+            },
+            {
+                "fecha": "2025-04-18",
+                "servicio": "Ortodoncia - revisión",
+                "profesional": "Dr. Morales"
+            }
+        ]
+    },
+    {
+        "DatosPersonale": {
+            "id": 6,
+            "Nombre": "Marcos Alfredo",
+            "Apellido": "Hernandez Zamora",
+            "Edad": 55
+        },
+        "DatosConctacto": {
+            "Correo": "prof.marcoshernandez@udem.edu.ni",
+            "Telefono": "85746932",
+            "direccion": "Granada, Nicaragua"
+        },
+        "DatosUsuario": {
+            "Usuario": "prof_Mhernandez",
+            "Contraseña": "260470"
+        },
+        "Citas": [
+            {
+                "fecha": "2025-11-11",
+                "servicio": "Limpieza dental",
+                "profesional": "Dra. Castillo"
+            },
+            {
+                "fecha": "2025-12-05",
+                "servicio": "Revisión general",
+                "profesional": "Dr. Vivas"
+            },
+            {
+                "fecha": "2026-01-20",
+                "servicio": "Blanqueamiento",
+                "profesional": "Dra. Rojas"
+            },
+            {
+                "fecha": "2026-02-15",
+                "servicio": "Ortodoncia - consulta",
+                "profesional": "Dr. Salinas"
+            },
+            {
+                "fecha": "2026-03-10",
+                "servicio": "Implante dental",
+                "profesional": "Dra. Méndez"
+            }
+        ]
+    }
+]

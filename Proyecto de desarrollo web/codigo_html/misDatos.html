@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../codigo_css/misDatos.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Usuarios</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="../img_Pry/logo 1.png" alt="Logo de la Clínica" width="100" height="auto">
+                </a>
+            </div>
+
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="../codigo_html/servicios.html">Servicios</a></li>
+                <li><a href="../codigo_html/Testimonios.html">Testimonios</a></li>
+                <li><a href="../codigo_html/Blog.html">Blog</a></li>
+                <li><a href="../codigo_html/contacto.html">Contacto</a></li>
+                <li><a href="../codigo_html/misDatos.html" class="active">Mis Datos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenedor donde se mostrará la información del usuario después del login -->
+    <main class="main-content">
+        <section id="user-profile" class="user-profile">
+            <!-- Contenido inyectado por JavaScript después del login -->
+        </section>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="login-modal" class="modal" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Cerrar">&times;</button>
+            <h2>Iniciar sesión</h2>
+            <form id="login-form">
+                <div class="field">
+                    <label for="login-usuario">Usuario</label>
+                    <input id="login-usuario" name="usuario" type="text" required>
+                </div>
+                <div class="field">
+                    <label for="login-contrasena">Contraseña</label>
+                    <input id="login-contrasena" name="contrasena" type="password" required>
+                </div>
+                <div class="actions">
+                    <button type="submit">Entrar</button>
+                    <button type="button" id="btn-cancel">Cancelar</button>
+                </div>
+                <p id="login-error" class="error-message" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="../Scripts/misDatos.js"></script>
+</body>
+</html>

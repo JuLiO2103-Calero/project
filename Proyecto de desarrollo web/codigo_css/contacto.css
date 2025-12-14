@@ -1,0 +1,312 @@
+/* Elimina márgenes y rellenos predeterminados para todos los elementos y establece la fuente a 'Poppins' */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Establece el fondo de la página con un degradado oscuro sobre una imagen de fondo centrada */
+body {
+    background: linear-gradient(rgba(0 0 0 / .8), rgba(0 0 0 / .8)),url(../img_Pry/Contacto.webp);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Configuración de la barra de navegación superior */
+nav {
+    background-color: rgba(2, 10, 248, 0.9); /* Color de fondo azul con opacidad */
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra debajo de la barra */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Listado de enlaces en la barra de navegación */
+nav ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas */
+}
+
+/* Espaciado entre los elementos de la lista */
+nav ul li {
+    margin: 5px;
+}
+
+/* Estilo de los enlaces en la barra de navegación */
+nav a {
+    color: white;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Suaviza el cambio de color al pasar el cursor */
+}
+
+/* Estilo para el enlace activo en la navegación */
+nav .active {
+    border: 2px solid white;
+    padding: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); /* Sombra alrededor del enlace activo */
+}
+
+/* Cambio de color en los enlaces al pasar el cursor */
+nav a:hover {
+    color: #fff;
+}
+
+/* Efecto visual al pasar el cursor sobre un enlace en la barra de navegación */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #fff; /* Línea blanca debajo del texto */
+    transition: width 0.3s ease; /* Suaviza la expansión de la línea */
+}
+
+/* Expande la línea blanca al pasar el cursor sobre el enlace */
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Estilo del logotipo dentro de la barra de navegación */
+.logo {
+    float: left;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del logotipo */
+    transition: 0.3s ease; /* Suaviza las transformaciones */
+}
+
+/* Efecto de escala en el logotipo al pasar el cursor */
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Configuración de la sección principal */
+section {
+    padding: 40px 0; /* Espaciado superior e inferior */
+    max-width: 1200px; /* Ancho máximo para mantener la sección centrada */
+    margin: 0 auto; /* Centra la sección horizontalmente */
+    color: #fff; /* Texto en color blanco para mejor contraste */
+    margin-top: 150px;
+}
+
+/* Configuración de la cuadrícula para organizar el contenido */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    padding: 20px;
+    gap: 10px; /* Espaciado entre elementos de la cuadrícula */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos para la caja de información dentro de la sección */
+.box-info {
+    color: #fff; /* Texto en color blanco */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    gap: 50px; /* Espacio entre cada elemento en la columna */
+}
+
+/* Estilo para el título dentro de la caja de información */
+.box-info > h1 {
+    text-align: left; /* Alinea el texto a la izquierda */
+    letter-spacing: 5px; /* Espaciado entre letras */
+}
+
+/* Estilos para las descripciones dentro de la caja de información */
+.data {
+    display: flex;
+    flex-direction: column; /* Alinea las descripciones en columna */
+    gap: 25px; /* Espaciado entre descripciones */
+}
+
+/* Estilo para los párrafos de la información */
+.data > p {
+    font-size: 1rem; /* Tamaño de fuente estándar */
+}
+
+/* Estilo para los iconos dentro de los párrafos */
+.data > p > i {
+    color: aqua; /* Color de los iconos en azul agua */
+    margin-right: 10px; /* Espaciado a la derecha del icono */
+    font-size: 25px; /* Tamaño del icono */
+}
+
+/* Estilo para enlaces dentro de la caja de información */
+.links {
+    display: flex;
+    gap: 15px; /* Espaciado entre enlaces */
+}
+
+/* Estilo para los botones de enlace */
+.links > a {
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+    width: 40px;
+    height: 40px;
+    background: aqua; /* Fondo azul agua */
+    text-align: center; /* Centra el texto */
+    transition: .1s; /* Suaviza las transformaciones */
+}
+
+/* Estilo para los iconos dentro de los botones de enlace */
+.links > a > i {
+    color: #fff; /* Color blanco para los iconos */
+    line-height: 40px; /* Alinea el icono verticalmente */
+    font-size: 20px; /* Tamaño del icono */
+}
+
+/* Estilo del formulario de contacto */
+form {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos del formulario en columna */
+    gap: 15px; /* Espaciado entre elementos del formulario */
+}
+
+/* Configuración de las cajas de entrada del formulario */
+.input-box {
+    position: relative;
+}
+
+/* Estilos generales para entradas de texto y área de texto */
+.input-box > input,
+.input-box > textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+    border: 3px solid transparent; /* Sin borde visible inicialmente */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    outline: none; /* Elimina borde predeterminado al hacer clic */
+    transition: border-bottom 0.3s ease; /* Suaviza la transición del borde */
+}
+
+/* Estilo para los marcadores de posición dentro de entradas de texto */
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color: #a3a3a3; /* Color gris claro para el marcador de posición */
+}
+
+/* Cambia el borde inferior al enfocar una entrada de texto */
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom: 3px solid aqua; /* Borde azul agua al hacer clic */
+}
+
+/* Estilo para los iconos dentro de las cajas de entrada */
+.input-box > i {
+    color: rgba(255, 255, 255, 0.3); /* Color gris claro */
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%); /* Centra el icono verticalmente */
+}
+
+/* Botón del formulario */
+form > button {
+    background: aqua; /* Fondo azul agua */
+    color: #fff; /* Texto blanco */
+    border: none;
+    padding: 10px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-size: 1rem;
+    transition: background 0.2s ease; /* Suaviza el cambio de color de fondo */
+}
+
+/* Efecto hover para el botón del formulario */
+form > button:hover {
+    background: aquamarine; /* Cambia el fondo a un tono más claro */
+}
+
+/* Estilo del pie de página */
+.footer {
+    background-color: rgba(2, 10, 248, 0.9); /* Fondo azul oscuro con opacidad */
+    color: white;
+    /*padding: 1px 0 1px 0;*/
+    text-align: center; /* Centra el texto */
+    font-size: 0.9rem; /* Tamaño de fuente pequeño */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Contenido del pie de página */
+.footer-content {
+    display: flex;
+    flex-direction: column; /* Alinea el contenido en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 10px; /* Espaciado entre elementos */
+}
+
+/* Contenedor de iconos de redes sociales en el pie de página */
+.social-media {
+    display: flex;
+    gap: 15px; /* Espaciado entre iconos */
+}
+
+/* Estilo de los iconos de redes sociales */
+.social-media a img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s; /* Suaviza el efecto de transformación */
+}
+
+/* Efecto hover para iconos de redes sociales */
+.social-media a img:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+/* Estilos responsivos para pantallas pequeñas (768px o menos) */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        gap: 20px;
+        width: 90%; /* Ajusta el ancho */
+        margin: 0 auto; /* Centra la sección */
+    }
+
+    /* Reorganiza la barra de navegación en pantallas pequeñas */
+    nav ul {
+        flex-direction: column;
+        align-items: center; /* Centra los elementos de la lista */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Aumenta el espacio entre elementos */
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (480px o menos) */
+@media screen and (max-width: 480px) {
+    .container {
+        gap: 15px;
+    }
+
+    .box-info > h1 {
+        font-size: 1.2rem; /* Reduce el tamaño de fuente del título */
+    }
+
+    .data > p {
+        font-size: 0.9rem; /* Reduce el tamaño de fuente de los párrafos */
+    }
+
+    .links > a {
+        width: 35px; /* Reduce el tamaño del botón de enlace */
+        height: 35px;
+    }
+
+    form > button {
+        padding: 8px; /* Reduce el relleno del botón */
+        font-size: 0.9rem; /* Reduce el tamaño de fuente del botón */
+    }
+}
+
